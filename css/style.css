@@ -1,0 +1,136 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+body{
+    align-items: center;
+    background: #927dfc;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+}
+.container{
+    background-color: #fff;
+    border-radius: 8px;
+    width: 450px;
+}
+.container h2{
+    border-bottom: 1px solid #d4dbe5;
+    font-weight: 600;
+    font-size: 22px;
+    padding: 16px 19px;
+}
+.wrapper{
+    margin: 20px 22px;
+}
+.wrapper .input_box{
+    position: relative;
+}
+.input_box input{
+    background: none;
+    border-radius: 4px;
+    border: 1px solid #aaa;
+    color: #000;
+    font-size: 17px;
+    font-weight: 500;
+    height: 53px;
+    letter-spacing: 1.4px;
+    padding: 0 2.85rem 0 1rem;
+    width: 100%;
+}
+ .input_box span{
+    color: #707070;
+    cursor: pointer;
+    line-height: 53px;
+    position: absolute;
+    right: 13px;
+ }
+.wrapper .pass_indicator{
+    background-color: #dfdfdf;
+    border-radius: 25px;
+    cursor: pointer;
+    height: 4px;
+    margin-top: 12px;
+    position: relative;
+    width: 100%;
+}
+.wrapper .pass_indicator::before{
+    background: #F1C80B;
+    border-radius: inherit;
+    content: "";
+    height: 100%;
+    position: absolute;
+    transition: width 0.3s ease;
+    width: 50%;
+}
+.wrapper .pass_indicator#weak::before{
+    background: #e64a4a;
+    width: 20%;
+}
+.wrapper .pass_indicator#medium::before{
+    background: #F1C80B;
+    width: 50%;
+}
+.wrapper .pass_indicator#strong::before{
+    background: #4285f4;
+    width: 100%;
+}
+.wrapper .pass_lenght{
+    margin: 24px 0px;
+}
+.pass_lenght .details{
+    display: flex;
+    justify-content: space-between;
+}
+.pass_lenght input{
+    cursor: pointer;
+    height: 5px;
+    width: 100%;
+}
+.pass_settings .options{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 16px;
+}
+.pass_settings .options .option{
+    align-items: center;
+    display: flex;
+    margin-bottom: 16px;
+    width: calc(100% / 2);
+}
+.options .option:first-child{
+    pointer-events: none;
+}
+.options .option:first-child input{
+    opacity: 0.7;
+}
+.options .option input{
+    cursor: pointer;
+    height: 16px;
+    width: 16px;
+}
+.options .option label{
+    cursor: pointer;
+    padding-left: 13px;
+}
+.wrapper .generator_btn{
+    background-color: #4285f4;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    margin: auto;
+    outline: none;
+    padding: 15px 0;
+    text-transform: uppercase;
+    width: 100%;
+}
+
